@@ -1,0 +1,1 @@
+nslookup -type=ptr -timeout=10 -retry=1 АйПиАдрес
