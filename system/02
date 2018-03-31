@@ -1,6 +1,1 @@
-sysctl kernel.hostname=NEW_HOSTNAME
-
-/etc/hostname
-server
-
-/etc/init.d/hostname.sh start
+hostname misha

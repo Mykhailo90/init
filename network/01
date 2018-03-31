@@ -1,4 +1,1 @@
-ifconfig -a | sed 's/[ \t].*//;/^\(lo\|\)$/d'
-
-ls /sys/class/net/
-
+ifconfig -l

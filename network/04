@@ -1,1 +1,3 @@
-route -n | awk '/UG/ {print $2}'
+netstat -nr | grep -w 'default' | awk '{print $1, $2, $3, $4, $4, $6}'
+
+# Вывожу дефолтный адрес для выхода в сеть

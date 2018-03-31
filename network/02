@@ -1,3 +1,3 @@
-/sbin/ifconfig | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'
+ipconfig getifaddr en0
 
-/sbin/ifconfig | awk '/inet addr:/ {print substr($2, 2)}'
+# Получаю адрес необходимого интерфейса

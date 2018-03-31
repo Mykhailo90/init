@@ -1,0 +1,11 @@
+echo "0 0 * * * /root/init/Scripting/04" >> /root/crontab
+crontab -u root ~/crontab
+
+md5sum /etc/crontab > /root/newsum
+if [ -f /root/oldsum ]
+then
+  if [ "$(diff /root/newsum /root/oldsum)" != "" ]
+  then echo "/etc/crontab was changed" | mail -s "Crontab changed" root
+  fi
+fi
+cp /root/newsum /root/oldsum

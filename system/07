@@ -1,0 +1,5 @@
+#ps -a | grep ssh
+
+cat /var/run/sshd.pid
+
+#sudo service ssh status | grep "Main" | cut -c 2- 

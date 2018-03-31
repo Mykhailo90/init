@@ -1,1 +1,5 @@
 dig +short 42.fr @resolver1.opendns.com
+
+# Address: 163.172.250.11
+# Address: 163.172.250.12
+# nslookup
